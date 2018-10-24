@@ -1,0 +1,40 @@
+<nav class="navbar is-fixed-top is-full-width is-transparent is-dark">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" [routerLink]="['/']">
+        <p id="nameNav" class="title has-text-white">DEV.EMILY</p>
+        <img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/xing_social_media_logo-512.png" alt="Logo">
+      </a>
+      <a id="top"></a>
+      <span class="navbar-burger burger" data-target="navbarMenuA">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </div>
+    <div id="navbarMenuA" class="navbar-menu">
+      <div class="navbar-end">
+        <a href="#about-link" class="navbar-item">
+          About
+        </a>
+        <a href="#project-link" class="navbar-item">
+          Projects
+        </a>
+        <a href="#contact-link" class="navbar-item">
+          Contact
+        </a>
+        <span class="navbar-item">
+          <a [routerLink]="['/resume']" class="button is-primary is-inverted">
+            <span class="icon">
+              <i class="fas fa-file-alt"></i>
+            </span>
+            <span>Resume</span>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
